@@ -34,8 +34,8 @@ class Settings(BaseModel):
     iou_threshold: float = float(os.getenv("IOU_THRESHOLD", "0.45"))
 
     # 文件存储配置
-    upload_dir: str = os.getenv("UPLOAD_DIR", "uploads")
-    result_dir: str = os.getenv("RESULT_DIR", "results")
+    upload_dir: str = os.getenv("UPLOAD_DIR", "static/uploads")
+    result_dir: str = os.getenv("RESULT_DIR", "static/results")
 
     # CORS配置
     cors_origins: list = ["*"]
